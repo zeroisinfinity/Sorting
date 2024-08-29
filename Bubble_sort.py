@@ -2,8 +2,8 @@ def bubble_sort(array):
 	for limiter in range(len(array)):
 		swap_flag = False
 		for cf in range( 0 , len(array) - limiter - 1 ):
-			if array[cf]>array[cf+1]:
-				array[cf],array[cf+1] = array[cf+1],array[cf]
+			if array[ cf ] > array[ cf + 1 ]:
+				array[ cf ] , array[ cf + 1 ] = array[ cf + 1 ] , array[ cf ]
 				swap_flag = True
 		if swap_flag == False:
 			break
