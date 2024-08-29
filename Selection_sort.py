@@ -7,7 +7,13 @@ def selection_sort(array):
                 current_min = array[compare]
                 array[compare], array[iter] = array[iter] , current_min
     return array
-
+def which_sort(sorted_array):
+    for compare in range(0,len(sorted_array),1):
+        for iter in range(compare+1,len(sorted_array),1):
+            if sorted_array[compare] > sorted_array[iter]:
+                sorted_array[compare],sorted_array[iter] = sorted_array[iter],sorted_array[compare]
+    return sorted_array
+print(bubble_sort([7,3,2,1,4]))
 sel_array = [9,8,7,6,5,4,3,2,1,0]
 #sel_array = [9]
 #sel_array = []
