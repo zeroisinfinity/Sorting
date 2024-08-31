@@ -1,5 +1,5 @@
 import sys
-sys.setrecursionlimit(10000000)
+sys.setrecursionlimit(3000)
 
 def partition(array, start_pos, end_pos):
     pivot = array[end_pos]
