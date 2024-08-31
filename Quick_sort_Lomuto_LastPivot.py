@@ -1,3 +1,6 @@
+import sys
+sys.setrecursionlimit(10000000)
+
 def partition(array, start_pos, end_pos):
     pivot = array[end_pos]
     minimum = start_pos - 1
