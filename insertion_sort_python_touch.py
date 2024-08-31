@@ -2,7 +2,7 @@
 r = [22,333,4555,22222222,77777,999999,67886556,995667,5764]
 arr[2:6] = r[3:6]
 print(arr)"""
-def insertion_sort(array):
+def insertion_sort_python_touch(array):
 
     if len(array) != 1 and len(array) != 0:
 
@@ -24,7 +24,7 @@ def insertion_sort(array):
 ins_array = [9,8,7,6,5,4,3,2,1,0]
 #ins_array = [9]
 #ins_array = []
-print(insertion_sort(ins_array))
+print(insertion_sort_python_touch(ins_array))
 
 
 
