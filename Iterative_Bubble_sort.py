@@ -1,4 +1,4 @@
-def bubble_sort(array):
+def iterative_bubble_sort(array):
 	for limiter in range(len(array)):
 		swap_flag = False
 		for cf in range( 0 , len(array) - limiter - 1 ):
@@ -9,7 +9,7 @@ def bubble_sort(array):
 			break
 	return array
 	
-print(bubble_sort([9,8,7,6,5,4,3,2,1,0]))
+print(iterative_bubble_sort([9,8,7,6,5,4,3,2,1,0]))
 			
 			
 			
