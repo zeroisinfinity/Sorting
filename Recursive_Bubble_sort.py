@@ -2,7 +2,7 @@
 import sys
 recursive_limiter = 0
 
-sys.setrecursionlimit(1000000)
+sys.setrecursionlimit(3000)
 #@functools.lru_cache(maxsize=1000000)
 def recursive_bubble_sort(array,start_pos,end_pos,recursive_limiter):
     if recursive_limiter <= end_pos:
