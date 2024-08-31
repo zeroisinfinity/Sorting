@@ -1,4 +1,4 @@
-import functools
+#import functools
 import sys
 recursive_limiter = 0
 
