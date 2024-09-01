@@ -65,7 +65,7 @@ def partition(array, start_pos, end_pos):
 
 
 # Driver code to test above
-arr = list(range(80,6,-4)) + [90]*7 + [34]*8
+arr = [9,7,6,5,4,2,7,8,9,2,5] + [900]*80000 + list(range(90000,578,-6))
 n = len(arr)
 quick_sort_iterative(arr, 0, n-1)
 print(arr)
