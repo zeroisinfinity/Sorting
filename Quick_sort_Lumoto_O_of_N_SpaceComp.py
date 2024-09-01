@@ -1,5 +1,7 @@
+import sys
 import random
 import math
+sys.setrecursionlimit(3000)
 
 def shuffle(array,start_pos,end_pos):
     sh_pivot = random.randint(start_pos,end_pos)
