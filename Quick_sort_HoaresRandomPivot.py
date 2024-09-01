@@ -1,6 +1,6 @@
 import sys
 import random
-sys.setrecursionlimit(10000000)
+sys.setrecursionlimit(3000)
 
 def quicksort(array, start_pos, end_pos):
     if start_pos < end_pos:
