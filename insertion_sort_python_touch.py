@@ -1,7 +1,3 @@
-"""arr = [4,7,8,9,5,2,4,62,0]
-r = [22,333,4555,22222222,77777,999999,67886556,995667,5764]
-arr[2:6] = r[3:6]
-print(arr)"""
 def insertion_sort_python_touch(array):
 
     if len(array) != 1 and len(array) != 0:
