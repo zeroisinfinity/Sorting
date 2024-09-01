@@ -6,16 +6,8 @@ sys.setrecursionlimit(3000)
 def quick_sort(array, start_pos, end_pos):
 
     if start_pos < end_pos:
-        left_pivot , right_pivot = shuffle(array, start_pos, end_pos)
-
-        if left_pivot - start_pos > math.ceil(len(array) // 2):
-            shuffle(array, start_pos, left_pivot)
-        else:
-            quick_sort(array, start_pos, left_pivot)
-
-        if end_pos - right_pivot  > math.ceil(len(array) // 2):
-            shuffle(array, right_pivot + 1 , end_pos)
-        else:
+            left_pivot , right_pivot = shuffle(array, start_pos, end_pos)
+            quick_sort(array, start_pos, left_pivot) 
             quick_sort(array, right_pivot + 1, end_pos)
 
 def shuffle(array,start_pos,end_pos):
@@ -46,9 +38,8 @@ def partition(array, start_pos, end_pos):
 
     return low_dyn , high_dyn
 
-arr = [9]*8 + [7]*8 + [5]*8     #print(array)
+arr = [8]*600 + [67384]*500 + list(range(90000,0,-8)) #print(array)
 print(len(arr))
 quick_sort(arr, 0, len(arr) - 1)
 print(arr)
 print(len(arr))
-
