@@ -1,7 +1,7 @@
 import sys
 import random
 import math
-sys.setrecursionlimit(10000000)
+sys.setrecursionlimit(3000)
 
 def quick_sort(array, start_pos, end_pos):
     new_pivot = 0
