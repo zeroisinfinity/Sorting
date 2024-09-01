@@ -1,22 +1,15 @@
 import sys
 import random
 import math
-sys.setrecursionlimit(3000)
+sys.setrecursionlimit(100000)
 
 def quick_sort(array, start_pos, end_pos):
 
     if start_pos < end_pos:
         left_pivot , right_pivot = shuffle(array, start_pos, end_pos)
 
-        if left_pivot - start_pos > math.ceil(len(array) // 2):
-            shuffle(array, start_pos, left_pivot)
-        else:
-            quick_sort(array, start_pos, left_pivot)
-
-        if end_pos - right_pivot  > math.ceil(len(array) // 2):
-            shuffle(array, right_pivot + 1 , end_pos)
-        else:
-            quick_sort(array, right_pivot + 1, end_pos)
+        quick_sort(array, start_pos, left_pivot)
+        quick_sort(array, right_pivot + 1, end_pos)
 
 def shuffle(array,start_pos,end_pos):
     sh_pivot = random.randint(start_pos,end_pos)
@@ -46,9 +39,9 @@ def partition(array, start_pos, end_pos):
 
     return low_dyn , high_dyn
 
-arr = [9]*8 + [7]*8 + [5]*8     #print(array)
-print(len(arr))
+arr = [9,7,6,5,4,2,7,8,9,2,5]*700 + [9]*800 + [67679]*8000 +  [900]*80000 + list(range(90000,578,-96))
 quick_sort(arr, 0, len(arr) - 1)
 print(arr)
-print(len(arr))
+#print(arr[0])
+
 
