@@ -26,5 +26,12 @@ def merge_sort(array,start_pos,mid,end_pos):
 def binary_cut(array,start_pos,end_pos):
     start_pos = 0
     end_pos = len(array) - 1
+    #mid = start_pos + (end_pos - start_pos)//2
+    end_dyn = 1
+    mid = start_pos + (end_dyn - start_pos)//2
+    merge_sort(array,start_pos,mid,end_dyn)
+    while 
+    start_pos = end_dyn + 1
+    end_dyn*=2
     mid = start_pos + (end_pos - start_pos)//2
-    #to be continued
+    merge_sort(array,start_pos,mid,end_dyn)
