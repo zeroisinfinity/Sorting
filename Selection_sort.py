@@ -8,7 +8,7 @@ def selection_sort(array):
     return array
 
 def selection_sort_python_touch(array):
-    for index in range(0, len(array), 1):
+    for index in range(0, len(array) - 1, 1):
         for cf in range(index + 1, len(array), 1):
             if array[index] > array[cf]:
                 array[index], array[cf] = array[cf], array[index]
