@@ -1,5 +1,5 @@
 def selection_sort(array):
-    for index in range(0, len(array), 1):
+    for index in range(0, len(array) - 1, 1):
         current_min = array[index]
         for cf in range(index + 1, len(array), 1):
             if current_min > array[cf]:
