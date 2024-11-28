@@ -8,7 +8,8 @@ def partition(array, start_pos, end_pos):
     for indx in range(start_pos, end_pos ):
         if array[indx] < pivot:
             minimum += 1
-            array[minimum], array[indx] = array[indx], array[minimum]
+            if indx != minimum:
+                array[minimum], array[indx] = array[indx], array[minimum]
     array[minimum + 1], array[end_pos] = array[end_pos], array[minimum + 1]
 
     return minimum + 1
