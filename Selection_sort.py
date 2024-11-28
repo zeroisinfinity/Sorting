@@ -1,18 +1,26 @@
 def selection_sort(array):
-    for index in range(0, len(array) - 1, 1):
-        current_min = array[index]
-        for cf in range(index + 1, len(array), 1):
-            if current_min > array[cf]:
-                current_min = array[cf]
-                array[cf], array[index] = array[index], current_min
+    for index in range(len(array) - 1):  # Traverse through all elements
+        current_min_index = index  # Assume the current element is the minimum
+        for cf in range(index + 1, len(array)):  # Traverse the unsorted portion
+            if array[cf] < array[current_min_index]:  # Find the new minimum
+                current_min_index = cf
+        # Swap only if the minimum is not already at the current position
+        if current_min_index != index:
+            array[index], array[current_min_index] = array[current_min_index], array[index]
     return array
 
+
 def selection_sort_python_touch(array):
-    for index in range(0, len(array) - 1, 1):
-        for cf in range(index + 1, len(array), 1):
-            if array[index] > array[cf]:
-                array[index], array[cf] = array[cf], array[index]
+    for index in range(0, len(array) - 1):  # Traverse through all elements
+        min_index = index  # Assume the current index is the minimum
+        for cf in range(index + 1, len(array)):  # Traverse the unsorted portion
+            if array[cf] < array[min_index]:  # Find the new minimum
+                min_index = cf
+        # Swap only if the minimum is not already at the current position
+        if min_index != index:
+            array[index], array[min_index] = array[min_index], array[index]
     return array
+
 
 
 print(selection_sort([7, 3, 2, 1, 4]))
