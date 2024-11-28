@@ -5,7 +5,7 @@ def quicksort(array, start_pos, end_pos):
     if start_pos < end_pos:
         new_pivot = partition(array, start_pos, end_pos)
 
-        quicksort(array, start_pos, new_pivot)
+        quicksort(array, start_pos, new_pivot - 1)
         quicksort(array, new_pivot + 1, end_pos)
 
 
