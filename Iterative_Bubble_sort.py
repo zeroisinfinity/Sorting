@@ -1,5 +1,5 @@
 def iterative_bubble_sort(array):
-	for limiter in range(len(array)):
+	for limiter in range(len(array)-1):
 		swap_flag = False
 		for cf in range( 0 , len(array) - limiter - 1 ):
 			if array[ cf ] > array[ cf + 1 ]:
