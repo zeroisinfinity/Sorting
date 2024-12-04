@@ -9,6 +9,5 @@ def insertion_sort(array):
     return array
 
 ins_array = [9,8,7,6,5,4,3,2,1,0]
-#ins_array = [9]
-#ins_array = []
+
 print(insertion_sort(ins_array))
