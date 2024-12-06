@@ -17,9 +17,6 @@ def recursive_bubble_sort(array,start_pos,end_pos,recursive_limiter):
 
         else:
             recursive_bubble_sort(array,0, end_pos, recursive_limiter + 1 )
-
-    else:
-        pass
 arr = list(range(80000,200,-1))
 recursive_bubble_sort(arr,0,len(arr)-1,recursive_limiter)
 print(arr)
