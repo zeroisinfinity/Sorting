@@ -1,5 +1,6 @@
 def selection_sort(array):
      # Traverse through all elements
+     for index in range(0, len(array) - 1, 1):
         current_min_index = index  # Assume the current element is the minimum
         for cf in range(index + 1, len(array)):  # Traverse the unsorted portion
             if array[cf] < array[current_min_index]:  # Find the new minimum
